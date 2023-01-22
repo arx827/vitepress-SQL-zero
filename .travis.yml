@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - lts/*
+install:
+  - npm ci
+  # - yarn install
+script:
+  - npm run docs:build
+  # - yarn docs:build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vitepress/dist
+  # 在 GitHub 中生成，用於允許 Travis 向你的倉庫推送代碼。在 Travis 的項目設置頁面進行配置，設置為 secure variable
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
