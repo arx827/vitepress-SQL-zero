@@ -3,7 +3,8 @@ import { defineConfig } from "vitepress";
 import { head, nav, sidebar } from './configs'
 
 export default defineConfig({
-  // base: '/base/',   // 站點將部署在這個 base URL路徑
+  base: '/vitepress-SQL-zero/',
+  lang: 'zh-TW',
   title: '從零開始 邁向數據分析 SQL 資料庫語法入門',
   description: '閱讀筆記',
   themeConfig: {
