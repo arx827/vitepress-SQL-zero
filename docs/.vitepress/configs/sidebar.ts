@@ -3,7 +3,7 @@ export const sidebar = {
     {
       text: '目錄',
       items: [
-        // { text: '第 0 章 建構 SQL 執行環境', link: '/guide/chapter_0' },
+        { text: '第 0 章 建構 SQL 執行環境', link: '/guide/chapter_0' },
         { text: '第 1 章 資料庫與SQL', link: '/guide/chapter_1' },
         { text: '第 2 章 查詢的基本語法', link: '/guide/chapter_2' },
         { text: '第 3 章 彙總與排序', link: '/guide/chapter_3' },
@@ -17,34 +17,3 @@ export const sidebar = {
     },
   ]
 }
-// export const sidebar = [
-//   // {
-//   //   text: '第 0 章 建構 SQL 執行環境',
-//   //   items: [
-//   //     { text: 'Index', link: '/guide/chapter_0' },
-//   //   ],
-//   // },
-//   {
-//     text: '第 1 章 資料庫與SQL',
-//     collapsible: true,
-//     collapsed: true,
-//     items: [
-//       { text: 'Index', link: '/guide/chapter_1' },
-//     ],
-//   },
-// ]
-// export const sidebar = {
-//   '/guide/': 'auto'
-// }
-// import {computed} from 'vue'
-// export const showSidebar = computed(() => {
-//   const { frontmatter } = route.data
-//   const { themeConfig } = siteRouteData.value
-//   return (
-//     !frontmatter.home &&
-//     frontmatter.sidebar !== false &&
-//     ((typeof themeConfig.sidebar === 'object' &&
-//       Object.keys(themeConfig.sidebar).length != 0) ||
-//       (Array.isArray(themeConfig.sidebar) && themeConfig.sidebar.length != 0))
-//   )
-// })
